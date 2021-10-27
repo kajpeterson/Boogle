@@ -1,3 +1,4 @@
+import enchant
 def spellcheck(word):
     d = enchant.Dict("en_US")
     if d.check(word):
