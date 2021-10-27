@@ -9,3 +9,4 @@ dependencies:
     - time
     - random
     - itertools
+    - pyenchant
