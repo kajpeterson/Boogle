@@ -4,3 +4,4 @@ def spellcheck(word):
       print(f"{word} is a real word.")
     else:
       print(f"{word} is not in the dictionary.")
+spellcheck("hello")
