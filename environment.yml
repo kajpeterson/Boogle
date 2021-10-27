@@ -5,7 +5,6 @@ dependencies:
   - python
   - pip
   - pip:
-    - pyenchant
     - operator
     - time
     - random
