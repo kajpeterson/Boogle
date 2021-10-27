@@ -3,10 +3,10 @@ channels:
   - conda-forge
 dependencies:
   - python
-  - random
-  - itertools
   - pip
   - pip:
     - pyenchant
     - operator
     - time
+    - random
+    - itertools
