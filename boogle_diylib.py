@@ -34,7 +34,7 @@ def letters_func(word):
 
 def spellcheck(word, letters):
     path = sys.path[0]
-    csv_path = f'{path}/en_diy_lower.csv'
+    csv_path = f'{path}/en_lower_61k.csv'
     #csv_path = '/Users/kajpeterson/Boggle/en_diy_lower.csv' alternatively, hardcode the path if you don't want to use sys.
     valid1 = 0
     if len(letters) < 3:
@@ -245,6 +245,7 @@ def scoring(bank1, bank2, score1, score2, round):
 def main():
     print("\n\n=======================\n* Welcome to Boogle!! *\n=======================\n(Boggle is trademarked.)\n")
     print("Common words among players eliminated\nNo. of Letters | Points per Word\n       3       |        1\n       4       |        1\n       5       |        2\n       6       |        3\n       7       |        5\n       8+      |        11\n")
+    print("For the 2-player version, take turns.\nThe screen will clear in between players so player 2 doesn't see player 1's words.")
     quit = 0
     score1 = 0
     score2 = 0
