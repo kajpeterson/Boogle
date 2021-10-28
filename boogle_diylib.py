@@ -334,7 +334,7 @@ def main():
                                 quit = 1     
                                 break
                             elif word == "":
-                                print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
+                                print('\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n')
                                 player = 2
                                 (bank2, quit) = play(player, dice, bank1, bank2, time_limit, quit)
                                 if quit == 1:
