@@ -1,7 +1,7 @@
 import pandas as pd
 
-csv_path = '/Users/kajpeterson/Boggle/en_diy_lower.csv'
-df = pd.read_csv(csv_path)
+#csv_path = '/Users/kajpeterson/Boggle/en_diy_lower.csv'
+df = pd.read_csv(en_diy_lower.csv)
 while True:
     word = input("Word to check:").lower()
     if word in df.values:
