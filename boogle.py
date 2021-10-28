@@ -1,10 +1,7 @@
-#cd /Users/kajpeterson/Boggle
-
 import itertools
 import random
 import operator
 import time
-#import sys
 import pandas as pd
 
 #====================================================================================
@@ -33,9 +30,7 @@ def letters_func(word):
     return letters
 
 def spellcheck(word, letters):
-    #path = sys.path[0]
     csv_path = 'en_lower_61k.csv'
-    #csv_path = '/Users/kajpeterson/Boggle/en_diy_lower.csv' alternatively, hardcode the path if you don't want to use sys.
     valid1 = 0
     if len(letters) < 3:
         print(f'{word} is invalid. Must be at least 3 letters.')
@@ -54,21 +49,17 @@ def chains_func(letters, dice):
         letter_pos_list = []
         found = 0
         for d in range (0,len(dice)):
-            #print(f'checking d{1}')
             if dice[d].get('letter') == l:
                 letter_pos_list.append(dice[d].get('pos'))
                 found = 1
-                #print("letter found!")
         if found == 0:
             print(f"{letters} is invalid because one or more letters do not appear on the board.")
             valid3 = 0
             break
-        word_pos_list.append(letter_pos_list)
-    #print(word_pos_list)    
+        word_pos_list.append(letter_pos_list)   
     return list(itertools.product(*word_pos_list)), valid3 
 
 def validate(chains,dice):     
-    #print("\n validating")
     default_pos = (1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16)
     valid_pos = default_pos
     valid2 = 0
@@ -77,12 +68,10 @@ def validate(chains,dice):
             break
         for i in range (0,len(chain)):
             if chain.count(chain[i]) > 1:
-                #print(f'{chain} is invalid because it contains duplicates')
                 valid_pos = default_pos
                 break
             if chain[i] in valid_pos:
                 if i == len(chain) - 1:
-                    #print(f'{chain} is a valid chain')
                     valid_pos = default_pos
                     valid2 = 1
                 else:
@@ -90,7 +79,6 @@ def validate(chains,dice):
                         if chain[i] == dice[d].get('pos'):
                             valid_pos = dice[d].get('adj')
             else:
-                #print(f'{chain} is invalid')
                 valid_pos = default_pos
                 break
     return valid2
