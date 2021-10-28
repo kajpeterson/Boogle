@@ -1,15 +1,11 @@
 # Boogle
-Boogle game and supporting files.
+Want to play Boogle?
 
-Need to import:
-itertools,
-enchant,
-random,
-operator,
-time.
+1. Click this link: [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kajpeterson/Boogle/HEAD)
+2. Once it loads (it takes a while), select File > New > Terminal
+3. Type or copy this text into the terminal:
+4. python boogle.py
+5. Hit Enter.
+6. Follow instruction on the screen
 
-I think enchant calls on "en" doc.
-
-Binder test:
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/kajpeterson/Boogle/HEAD)
-
+Enjoy!
