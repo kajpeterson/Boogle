@@ -5,8 +5,6 @@
 
 # In[ ]:
 
-
-import sys
 import pandas as pd
 import random
 
@@ -15,9 +13,8 @@ import random
 
 
 #Random word generator
-path = sys.path[0]
-filename = '/en_lower_61k_5let.csv'
-wordframe = pd.read_csv(path+filename, header = None)
+filename = 'en_lower_61k_5let.csv'
+wordframe = pd.read_csv(filename, header = None)
 wordlist = list(wordframe[0])
 word = wordlist[random.randint(0,len(wordlist))]
 
